@@ -33,7 +33,10 @@ app.put('/livros/:id', (req, res) => {
     res.json(livros);
 })
 
-app.delete('livros/:id', (req, res) => {
+app.delete('/livros/:id', (req, res) => {
+    let id = buscarPorId(req.params.id);
+    livros.splice(id, 1);
+    res.send(`Livro removido com sucesso`)
 })
 
 function buscarPorId(id){
