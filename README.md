@@ -1,2 +1,2 @@
 # node
- Projeot do curso da Alura
+ Projeto do curso da Alura
